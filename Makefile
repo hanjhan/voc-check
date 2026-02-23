@@ -44,11 +44,9 @@ rebuild-nocache:
 	docker build $(PLATFORM) -f $(DOCKERFILE) $(BUILD_ARGS) --no-cache -t $(IMAGE) $(BUILD_CTX)
 
 run:
-	docker run -d --name $(CONTAINER) $(IMAGE)
-
-dev:
 	docker run --rm -it \
 	--name $(CONTAINER) \
 	-v $(WORKDIR_HOST):$(WORKDIR_CONT) \
-        -w $(WORKDIR_CONT) \
-	$(IMAGE) $(CMD)
+	-w $(WORKDIR_CONT) \
+	$(IMAGE) \
+	python3 main.py
