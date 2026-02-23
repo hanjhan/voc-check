@@ -1,0 +1,7 @@
+workdir/pdfs/
+workdir/__pycache__/
+workdir/data/chap*/
+.DS_store
+*.pdf
+*.bak
+*.pyc

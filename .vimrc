@@ -1,0 +1,34 @@
+" vimの矩形選択で文字がなくても右に進める
+set virtualedit=block
+" vimバーからファイル選択
+set wildmenu
+
+" 検索時に大文字小文字を区別しない
+set ignorecase
+" 検索が末尾まで進んだら先頭に移動
+set wrapscan
+" 入力の最初から検索開始
+set incsearch
+" 検索結果のハイライト
+set hlsearch
+
+" タブキーで半角スペース挿入
+set expandtab
+" インデント幅
+set shiftwidth=4
+" タブキー押下で挿入する幅
+set softtabstop=4
+" 対応するカッコを強調
+set showmatch
+" 改行時インデント幅を合わせる
+set smartindent
+" タイトル表示
+set title
+" 行番号表示
+set number
+" 相対行番号を表示
+set relativenumber
+" シンタックスハイライト
+syntax on
+" ヤンクでクリップボードにコピー
+set clipboard=unnamed,autoselect
